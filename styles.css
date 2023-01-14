@@ -1,0 +1,355 @@
+body {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+}
+
+/* Start Header */
+header {
+    padding: 30px;
+    background-image: url(/Resources/richard-horvath-cPccYbPrF-A-unsplash.jpg);
+    background-position: center;
+}
+
+header h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+header nav ul li {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 10px 12px;
+    width: 100px;
+}
+
+header a:link {
+    text-decoration: none;
+    color: white;
+}
+
+header a:visited {
+    color: white;
+}
+
+header a:hover {
+    color: black;
+}
+
+header a:active {
+    color: black;
+    font-size: 1.4rem;
+}
+/* End Header */
+
+/* Start About-me */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-container p {
+    flex-basis: 50%;
+    font-size: 1.2em;
+    margin: 10px;
+    max-width: 700px;
+    text-align: left;
+}
+
+.about-container img {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+@media only screen and (max-width: 800px) {
+    .content-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .content-container p {
+        flex-basis: 50%;
+        font-size: 1.2em;
+        margin: 10px;
+        max-width: 700px;
+        text-align: center;
+    }
+    
+    .content-container img {
+        width: 300px;
+        height: auto;
+        margin: 10px;
+        border-radius: 25px;
+    }
+}
+/* End About-me */
+
+/* Start Projects */
+#projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#projects h2 {
+    margin-top: 80px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project {
+    padding: 1em;
+    width: 24em; 
+    background-color: rgb(0, 122, 204);
+    background: url(/Resources/richard-horvath-cPccYbPrF-A-unsplash.jpg);
+    background-position: center;
+    border-radius: 15px;
+    margin: 1em;
+    text-align: center;
+}
+
+.project-image {
+    text-align: center ;
+}
+
+.project img {
+    border-radius: 15px;
+    width: 360px;
+}
+
+.project h3 {
+    font-size: 1.3em;
+    color: white;
+    margin-top: -6px;
+    margin-bottom: 8px;
+}
+
+.project ul {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: -6px;
+}
+
+.project ul li {
+    display: inline-block;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 70px;
+}
+
+.project a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.project a:visited {
+    color: white;
+}
+
+.project a:hover {
+    color: black;
+}
+
+.project a:active {
+    font-size: 0.9em;
+}
+/* End Projects */
+
+/* Start Skills */
+.skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.skills-container img {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+}
+/* End Skills */
+
+/* Start Footer */
+footer {
+    background-image: url(/Resources/richard-horvath-cPccYbPrF-A-unsplash.jpg);
+    background-position: center;
+}
+
+footer h2 {
+    color: white;
+    padding-top: 10px;
+}
+
+footer a:link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+footer a:visited {
+    color: white;
+}
+
+footer a:hover {
+    color: black;
+}
+
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.contact-container img {
+    width: 50px;
+    margin: 10px;
+}
+/* End Footer */
+
+/* Start Projects Pages */
+/* Start Slideshow */
+.slideshow-container {
+    box-sizing: border-box;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.start {
+    display: contents;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 12px 12px;
+    position: absolute;
+    bottom: 4px;
+    width: 97.6%;
+    text-align: center;    
+}
+
+.caption-background {
+    padding: 12px 12px;
+    position: absolute;
+    bottom: 4px;
+    width: 97.6%;
+    height: 12px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 15px 15px;
+    position: absolute;
+    top: 0;
+}
+  
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #0046b5;
+}
+  
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+/* End Slideshow */
+
+/* Start About-Project */
+.about-project-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-project-container p {
+    flex-basis: 80%;
+    font-size: 1.2em;
+    margin: 10px;
+    max-width: 1000px;
+}
+/* End About-Project */
+/* Start Projects Pages */
