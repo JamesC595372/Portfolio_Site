@@ -71,14 +71,14 @@ header a:active {
 }
 
 @media only screen and (max-width: 800px) {
-    .content-container {
+    .about-container {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
     
-    .content-container p {
+    .about-container p {
         flex-basis: 50%;
         font-size: 1.2em;
         margin: 10px;
@@ -86,7 +86,7 @@ header a:active {
         text-align: center;
     }
     
-    .content-container img {
+    .about-container img {
         width: 300px;
         height: auto;
         margin: 10px;
