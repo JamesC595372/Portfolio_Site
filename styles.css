@@ -4,8 +4,8 @@ body {
 }
 
 h2 {
-    margin-top: 30px;
-    margin-bottom: 15px;
+    margin-top: 40px;
+    margin-bottom: 10px;
     font-size: 2.5rem;
 }
 
@@ -18,6 +18,7 @@ header {
 
 header h1 {
     font-size: 4em;
+    margin-top: -10px;
     margin-bottom: 10px;
     color: white;
 }
@@ -81,13 +82,14 @@ header a:active {
     .about-container p {
         flex-basis: 50%;
         font-size: 1.2em;
-        margin: 10px;
+        margin-left: 25px;
+        margin-right: 25px;
         max-width: 700px;
         text-align: center;
     }
     
     .about-container img {
-        width: 300px;
+        width: 240px;
         height: auto;
         margin: 10px;
         border-radius: 25px;
@@ -118,7 +120,6 @@ header a:active {
 .project {
     padding: 1em;
     width: 24em; 
-    background-color: rgb(0, 122, 204);
     background: url(./Resources/richard-horvath-cPccYbPrF-A-unsplash.jpg);
     background-position: center;
     border-radius: 15px;
@@ -170,6 +171,31 @@ header a:active {
 
 .project a:active {
     font-size: 0.9em;
+}
+
+@media only screen and (max-width: 800px) {
+    .project {
+        width: 20em;
+    }
+
+    .project img {
+        width: 310px;
+    }
+
+    .project ul {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: -12px;
+    }
+
+    .project ul li {
+        display: inline-block;
+        width: auto;
+    }
+
+    .project a:active {
+        font-size: 1em;
+    }
 }
 /* End Projects */
 
@@ -235,6 +261,13 @@ footer a:hover {
 .contact-container img {
     width: 50px;
     margin: 10px;
+    margin-left: 0px;
+}
+
+@media only screen and (max-width: 800px) {
+    .contact-container img {
+        width: 40px;
+    }
 }
 /* End Footer */
 
@@ -245,6 +278,10 @@ footer a:hover {
     max-width: 1000px;
     position: relative;
     margin: auto;
+}
+
+.slideshow-container img {
+    border-radius: 15px;
 }
 
 .mySlides {
@@ -302,6 +339,7 @@ footer a:hover {
     height: 12px;
     background-color: black;
     opacity: 0.5;
+    border-radius: 0 0 15px 15px;
 }
 
 .numbertext {
@@ -326,7 +364,7 @@ footer a:hover {
 .active, .dot:hover {
     background-color: #0046b5;
 }
-  
+
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -335,6 +373,34 @@ footer a:hover {
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+@media only screen and (max-width: 1100px) {
+    .slideshow-container {
+        max-width: 600px;
+    }
+
+    .text {
+        width: 96%;    
+    }
+    
+    .caption-background {
+        width: 96%;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .slideshow-container {
+        max-width: 380px;
+    }
+
+    .text {
+        width: 93.8%;    
+    }
+    
+    .caption-background {
+        width: 93.8%;
+    }
 }
 /* End Slideshow */
 
